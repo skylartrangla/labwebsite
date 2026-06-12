@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Based Model of Bovine Respiratory Disease | AISLS Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .theme-hero {
+            background: linear-gradient(135deg, #500000 0%, #7a1212 60%, #8f1a1a 100%);
+            color: #ffffff;
+            padding: 150px 20px 90px;
+            text-align: center;
+        }
+
+        .theme-hero h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .theme-hero p {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        .back-link-top {
+            display: inline-block;
+            color: #ffd700;
+            font-weight: 700;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .back-link-top:hover {
+            text-decoration: underline;
+        }
+
+        .papers-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .papers-intro {
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            text-align: center;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .paper-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .paper-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-top: 5px solid #500000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .paper-card h3 {
+            color: #500000;
+            font-size: 1.35rem;
+            margin-bottom: 1rem;
+        }
+
+        .paper-card p {
+            color: #2c3e50;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .paper-button {
+            display: inline-block;
+            background: #500000;
+            color: #ffffff;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .paper-button:hover {
+            background: #7a1212;
+        }
+
+        .back-button-wrapper {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #500000;
+            font-weight: 700;
+            text-decoration: none;
+            border: 2px solid #500000;
+            padding: 12px 24px;
+            border-radius: 6px;
+        }
+
+        .back-button:hover {
+            background: #500000;
+            color: #ffffff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .theme-hero h1 {
+                font-size: 2rem;
+            }
+
+            .theme-hero {
+                padding-top: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/tamu-logo.png" alt="Texas A&M University Logo" class="tamu-logo">
+                    <h2>AISLS Lab</h2>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="biography.html" class="nav-link">Faculty Advisor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="research.html" class="nav-link active">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aisfs-club.html" class="nav-link">AISFS Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="theme-hero">
+            <a href="research.html" class="back-link-top">← Back to Research Products</a>
+            <h1>Agent Based Model of Bovine Respiratory Disease</h1>
+            <p>
+                Selected papers related to agent-based modeling, beef supply chain dynamics,
+                disease prediction, and Bovine Respiratory Disease decision support.
+            </p>
+        </section>
+
+        <section class="papers-section">
+            <div class="container">
+                <h2>Selected Papers</h2>
+
+                <p class="papers-intro">
+                    This is a test layout using the same uploaded PDF five times. Later, each card can be replaced with a different paper.
+                </p>
+
+                <div class="paper-grid">
+                    <div class="paper-card">
+                        <h3>Paper 1</h3>
+                        <p>Test paper card for the Agent Based Model of Bovine Respiratory Disease theme.</p>
+                        <a class="paper-button" href="papers/abm-brd/1abm_paper1.pdf" target="_blank" rel="noopener noreferrer">
+                            Read Paper
+                        </a>
+                    </div>
+
+                    <div class="paper-card">
+                        <h3>Paper 2</h3>
+                        <p>Placeholder card using the same PDF so you can preview how five papers will look.</p>
+                        <a class="paper-button" href="papers/abm-brd/1abm_paper1.pdf" target="_blank" rel="noopener noreferrer">
+                            Read Paper
+                        </a>
+                    </div>
+
+                    <div class="paper-card">
+                        <h3>Paper 3</h3>
+                        <p>Placeholder card using the same PDF so you can preview the final paper layout.</p>
+                        <a class="paper-button" href="papers/abm-brd/1abm_paper1.pdf" target="_blank" rel="noopener noreferrer">
+                            Read Paper
+                        </a>
+                    </div>
+
+                    <div class="paper-card">
+                        <h3>Paper 4</h3>
+                        <p>Placeholder card using the same PDF. Replace this link later with the real fourth paper.</p>
+                        <a class="paper-button" href="papers/abm-brd/1abm_paper1.pdf" target="_blank" rel="noopener noreferrer">
+                            Read Paper
+                        </a>
+                    </div>
+
+                    <div class="paper-card">
+                        <h3>Paper 5</h3>
+                        <p>Placeholder card using the same PDF. Replace this link later with the real fifth paper.</p>
+                        <a class="paper-button" href="papers/abm-brd/1abm_paper1.pdf" target="_blank" rel="noopener noreferrer">
+                            Read Paper
+                        </a>
+                    </div>
+                </div>
+
+                <div class="back-button-wrapper">
+                    <a href="research.html" class="back-button">Back to Research Products</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>Texas A&M University<br>
+                    Department of Animal Science<br>
+                    AgriLife Research</p>
+                </div>
+
+                <div class="footer-section">
+                    <p>Dr. Karun Kaniyamattam<br>
+                    karun.kaniyamattam@ag.tamu.edu<br>
+                    979-314-7785</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>Kleberg 432E<br>
+                    Texas A&M University<br>
+                    College Station, TX</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Laboratory for Sustainable Livestock Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
