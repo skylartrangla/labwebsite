@@ -6,6 +6,30 @@
     <title>Research Products | AI Laboratory for Sustainable Livestock Systems</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    .research-item-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    .research-item-link:hover {
+        text-decoration: none;
+    }
+
+    .research-item-link .research-item {
+        height: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .research-item-link .research-item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+</style>
+    
 </head>
 <body>
     <header>
@@ -59,16 +83,18 @@
                 <h2>Our Research Portfolio</h2>
                 <div class="research-grid">
                     <!-- Research Product 1 -->
-                    <div class="research-item">
-                        <div class="research-image">
-                            <img src="images/ABM_BRD.png" alt="Agent Based Model of Bovine Respiratory Disease - Supply Chain Dynamics Visualization" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                        </div>
-                        <div class="research-content">
-                            <h3>Agent Based Model of Bovine Respiratory Disease</h3>
-                            <p>ABM models the beef supply chain dynamics based on attributes and decision rules for BRD prediction.</p>
-                        </div>
-                    </div>
-
+                        <!-- Research Product 1 -->
+<a href="abm-brd.html" class="research-item-link" aria-label="Open papers for Agent Based Model of Bovine Respiratory Disease">
+    <div class="research-item">
+        <div class="research-image">
+            <img src="images/ABM_BRD.png" alt="Agent Based Model of Bovine Respiratory Disease - Supply Chain Dynamics Visualization" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div class="research-content">
+            <h3>Agent Based Model of Bovine Respiratory Disease</h3>
+            <p>ABM models the beef supply chain dynamics based on attributes and decision rules for BRD prediction.</p>
+        </div>
+    </div>
+</a>
                     <!-- Research Product 2 -->
                     <div class="research-item">
                         <div class="research-image">
